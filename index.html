@@ -1,0 +1,563 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+
+    <style type="text/tailwindcss">
+        @theme {
+          --font-poppins: "Poppins", serif;
+          --font-lato: "Lato", serif;
+
+          --color-sagef: #889E73;
+          --color-blackf: #141414;
+          --color-whitef: #FAFAFA;
+          --color-grayf: #5F5F5F
+        }
+      </style>
+
+
+      <!-- Daisy UI -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- Google Font -->
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+
+        <!-- CSS STYLE -->
+        <style>
+          .button-mini {
+            width: 1.1rem;
+          }
+
+          /* .tab{
+            margin-left: 240px;
+          } */
+        </style>
+
+      
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="container-fluid font-poppins bg-whitef text-blackf min-h-screen p-4">
+      <!-- Navbar start -->
+      <div class="navbar uppercase fixed z-30 p-0">
+        <div class="navbar-start">
+         
+          <a href="#hero" class="btn btn-ghost text-2xl ">KOST 102</a>
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <ul class="menu menu-horizontal px-1 font-lato">
+            <li><a href="#fitur">Fasilitas</a></li>
+            <li><a href="#kamar">Kamar</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end px-8">
+          <a class="btn hidden sm:flex bg-[#889E73] rounded-none border-none text-white">Chat Kami</a>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-4 shadow">
+              <li><a href="#fitur">Fasilitas</a></li>
+              <li><a href="#kamar">Kamar</a></li>
+              <li><a href="#galeri">Galeri</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar end -->
+
+      <!-- Hero start -->
+       <div class="grid grid-cols-1  lg:grid-cols-2  min-h-screen w-full" id="hero">
+        <div class="flex flex-col justify-center pt-20 pb-10">
+            <h1 class="text-5xl font-semibold capitalize my-8">Kamar Kost Murah,
+                Lokasi Strategis</h1>
+            <p class="font-lato mb-8">hanya 1 km dari Politeknik Negeri Media Kreatif stasiun universitas pancasila, menjadikan KOST 102 pilihan ideal bagi mahasiswa dan pekerja yang menginginkan tempat tinggal dengan akses mudah. <br>
+                ✔ Fasilitas lengkap <br>✔ Kamar luas & nyaman <br>✔ Lingkungan aman dan strategis</p>
+
+            <a class="btn bg-[#889E73] rounded-none border-none text-white uppercase w-fit">chat kami sekarang</a>
+        </div>
+        <div class="flex items-center ">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.33.jpeg" class="bg-slate-400 object-cover w-full h-96 lg:h-5/6"></img>
+        </div>
+       </div>
+      <!-- Hero end  -->
+
+      <!-- Fitur start -->
+       <div class="flex flex-col md:flex-row lg:flex-row min-h-screen w-full mt-16 mb-4 md:-mb-40 lg:mb-12 gap-3 " id="fitur">
+        <div class="flex-2 relative">
+            <img src="fitur-main.png" alt="">
+            <a class="py-2 px-2 md:px-4 lg:px-10 bg-transparent  rounded-full border text-xs border-black text-black uppercase w-fit absolute top-56 md:top-60 lg:top-[25rem]">fasilitas kost</a>
+            <h1 class="lg:text-[4.2rem] text-3xl md:text-4xl font-semibold capitalize  absolute top-64 md:top-72 lg:top-[30rem] leading-snug">kost-an <br>
+                nyaman</h1>
+        </div>
+        <div class="flex-1 flex flex-col gap-3">
+            <img src="tOP-GRID.png" alt="">
+            <img src="BOTTOM-fitur.png" alt="">
+        </div>
+       </div>
+
+       <div class="flex w-full px-2 md:px-2 lg:px-20 justify-between">
+        <div class="flex1">
+            <h1 class="text-5xl md:text-[4.2rem] capitalize leading-tight ">5+</h1>
+            <p class="text-sm md:text-base text-grayf">kamar kost</p>
+        </div>
+        <div class="flex1">
+            <h1 class="text-5xl md:text-[4.2rem] capitalize leading-tight ">1km+</h1>
+            <p class="text-sm md:text-base text-grayf">ke kampus</p>
+        </div>
+        <div class="flex1">
+            <h1 class="text-5xl md:text-[4.2rem] capitalize leading-tight ">2+</h1>
+            <p class="text-sm md:text-base text-grayf">statsiun terdekat</p>
+        </div>
+        <div class="flex1">
+            <h1 class="text-5xl md:text-[4.2rem] capitalize leading-tight ">5+</h1>
+            <p class="text-sm md:text-base text-grayf">fasilitas unggulan</p>
+        </div>
+       </div>
+      <!-- Fitur end -->
+
+      <!-- Daftar Kamar start -->
+        <div class="flex flex-col items-center my-32 w-full" id="kamar">
+            <h1 class="text-[4.2rem] capitalize leading-tight mb-8 text-center">Daftar Harga Kamar </h1>
+            <div class="flex justify-center w-full">
+                <div role="tablist" class="tabs tabs-lifted w-full grid justify-center">
+                    <input type="radio" name="my_tabs_2" role="tab" class="tab bg-sagef text-white ml-28 md:ml-80 lg:ml-[30rem]" aria-label="Semua" />
+
+                    <!-- panel semua -->
+                    <div role="tabpanel" class="tab-content  mt-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-evenly ">
+
+                            <!-- card1 -->
+                      <div class="mt-12">
+                        <div class="overflow-hidden w-full rounded-lg h-5/6">
+                          <img src="kamarcewe1.jpeg" alt="" class="w-full rounded-lg h-full hover:scale-110 transition-all duration-1000">
+                        </div>
+                       
+                        <div class="flex my-4 justify-between">
+                            <h4 class="text-2xl font-semibold capitalize">kamar wanita 1</h4>
+                            <h5 class="text-2xl capitalize">rp. 1.5juta</h5>
+                        </div>
+                        <div class="flex flex-wrap gap-2 font-semibold">
+                          <div class="flex gap-2">
+                              <img src="asset/mdi_bed.svg" alt="" class="button-mini">
+                              <p>4 kasur </p>
+                          </div>
+                          <div class="flex gap-2">
+                            <img src="asset/icon-shower-head.svg" alt="" class="button-mini">
+                            <p>kamar mandi dalam </p>
+                        </div>
+                        <div class="flex gap-2">
+                          <img src="asset/mdi_cupboard.svg" alt="" class="button-mini">
+                          <p>2 lemari </p>
+                      </div>
+                      </div>
+                      </div>
+
+                        <!-- card1 -->
+                        <div class="mt-12">
+                          <div class="overflow-hidden w-full rounded-lg h-5/6">
+                            <img src="kamarcowo4.jpeg" alt="" class="w-full rounded-lg h-full hover:scale-110 transition-all duration-1000">
+                          </div>
+                            <div class="flex my-4 justify-between">
+                                <h4 class="text-2xl font-semibold capitalize">kamar wanita 2</h4>
+                                <h5 class="text-2xl capitalize">rp. 1.2juta</h5>
+                            </div>
+                            <div class="flex flex-wrap gap-2 font-semibold">
+                              <div class="flex gap-2">
+                                  <img src="asset/mdi_bed.svg" alt="" class="button-mini">
+                                  <p>2 kasur </p>
+                              </div>
+                              <div class="flex gap-2">
+                                <img src="asset/icon-shower-head.svg" alt="" class="button-mini">
+                                <p>kamar mandi dalam </p>
+                            </div>
+                            <div class="flex gap-2">
+                              <img src="asset/mdi_cupboard.svg" alt="" class="button-mini">
+                              <p>1 lemari </p>
+                          </div>
+                          </div>
+                          </div>
+
+                            <!-- card1 -->
+                      <div class="mt-12">
+                        <div class="overflow-hidden w-full rounded-lg h-5/6">
+                          <img src="kamarcowo2.jpeg" alt="" class="w-full rounded-lg h-full hover:scale-110 transition-all duration-1000">
+                        </div>
+                        <div class="flex my-4 justify-between">
+                            <h4 class="text-2xl font-semibold capitalize">kamar pria 1</h4>
+                            <h5 class="text-2xl capitalize">rp. 1.2juta</h5>
+                        </div>
+                        <div class="flex flex-wrap gap-2 font-semibold">
+                            <div class="flex gap-2">
+                                <img src="asset/mdi_bed.svg" alt="" class="button-mini">
+                                <p>2 kasur </p>
+                            </div>
+                            <div class="flex gap-2">
+                              <img src="asset/icon-shower-head.svg" alt="" class="button-mini">
+                              <p>kamar mandi dalam </p>
+                          </div>
+                          <div class="flex gap-2">
+                            <img src="asset/mdi_cupboard.svg" alt="" class="button-mini">
+                            <p>1 lemari </p>
+                        </div>
+                        </div>
+                      </div>
+
+                       <!-- card1 -->
+                       <div class="mt-12">
+                        <div class="overflow-hidden w-full rounded-lg h-5/6">
+                          <img src="kamarcowo3.jpeg" alt="" class="w-full rounded-lg h-full hover:scale-110 transition-all duration-1000">
+                        </div>
+                        <div class="flex my-4 justify-between">
+                            <h4 class="text-2xl font-semibold capitalize">kamar pria 2</h4>
+                            <h5 class="text-2xl capitalize">rp. 1.2juta</h5>
+                        </div>
+                        <div class="flex flex-wrap gap-2 font-semibold">
+                            <div class="flex gap-2">
+                                <img src="asset/mdi_bed.svg" alt="" class="button-mini">
+                                <p>2 kasur </p>
+                            </div>
+                            <div class="flex gap-2">
+                              <img src="asset/icon-shower-head.svg" alt="" class="button-mini">
+                              <p>kamar mandi dalam </p>
+                          </div>
+                          <div class="flex gap-2">
+                            <img src="asset/mdi_cupboard.svg" alt="" class="button-mini">
+                            <p>1 lemari </p>
+                        </div>
+                        </div>
+                      </div>
+
+
+                       
+
+
+                        </div>
+                        
+                    </div>
+                  
+                    <input
+                      type="radio"
+                      name="my_tabs_2"
+                      role="tab"
+                      class="tab"
+                      aria-label="Wanita"
+                      checked="checked" />
+
+                    <div role="tabpanel" class="tab-content mt-6">
+                      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-evenly ">
+                       <!-- card1 -->
+                       <div class="mt-12">
+                        <div class="overflow-hidden w-full rounded-lg h-5/6">
+                          <img src="kamarcewe1.jpeg" alt="" class="w-full rounded-lg h-full hover:scale-110 transition-all duration-1000">
+                        </div>
+                       
+                        <div class="flex my-4 justify-between">
+                            <h4 class="text-2xl font-semibold capitalize">kamar wanita 1</h4>
+                            <h5 class="text-2xl capitalize">rp. 1.5juta</h5>
+                        </div>
+                        <div class="flex flex-wrap gap-2 font-semibold">
+                          <div class="flex gap-2">
+                              <img src="asset/mdi_bed.svg" alt="" class="button-mini">
+                              <p>4 kasur </p>
+                          </div>
+                          <div class="flex gap-2">
+                            <img src="asset/icon-shower-head.svg" alt="" class="button-mini">
+                            <p>kamar mandi dalam </p>
+                        </div>
+                        <div class="flex gap-2">
+                          <img src="asset/mdi_cupboard.svg" alt="" class="button-mini">
+                          <p>2 lemari </p>
+                      </div>
+                      </div>
+                      </div>
+
+                        <!-- card1 -->
+                        <div class="mt-12">
+                          <div class="overflow-hidden w-full rounded-lg h-5/6">
+                            <img src="kamarcowo4.jpeg" alt="" class="w-full rounded-lg h-full hover:scale-110 transition-all duration-1000">
+                          </div>
+                            <div class="flex my-4 justify-between">
+                                <h4 class="text-2xl font-semibold capitalize">kamar wanita 2</h4>
+                                <h5 class="text-2xl capitalize">rp. 1.2juta</h5>
+                            </div>
+                            <div class="flex flex-wrap gap-2 font-semibold">
+                              <div class="flex gap-2">
+                                  <img src="asset/mdi_bed.svg" alt="" class="button-mini">
+                                  <p>2 kasur </p>
+                              </div>
+                              <div class="flex gap-2">
+                                <img src="asset/icon-shower-head.svg" alt="" class="button-mini">
+                                <p>kamar mandi dalam </p>
+                            </div>
+                            <div class="flex gap-2">
+                              <img src="asset/mdi_cupboard.svg" alt="" class="button-mini">
+                              <p>1 lemari </p>
+                          </div>
+                          </div>
+                          </div>
+
+                       </div>
+                    </div>
+                  
+                    <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Pria" />
+                    <div role="tabpanel" class="tab-content mt-6">
+                      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-evenly ">
+                       <!-- card1 -->
+                       <div class="mt-12">
+                        <div class="overflow-hidden w-full rounded-lg h-5/6">
+                          <img src="kamarcowo2.jpeg" alt="" class="w-full rounded-lg h-full hover:scale-110 transition-all duration-1000">
+                        </div>
+                       
+                        <div class="flex my-4 justify-between">
+                            <h4 class="text-2xl font-semibold capitalize">kamar pria 1</h4>
+                            <h5 class="text-2xl capitalize">rp. 1.2juta</h5>
+                        </div>
+                        <div class="flex flex-wrap gap-2 font-semibold">
+                          <div class="flex gap-2">
+                              <img src="asset/mdi_bed.svg" alt="" class="button-mini">
+                              <p>2 kasur </p>
+                          </div>
+                          <div class="flex gap-2">
+                            <img src="asset/icon-shower-head.svg" alt="" class="button-mini">
+                            <p>kamar mandi dalam </p>
+                        </div>
+                        <div class="flex gap-2">
+                          <img src="asset/mdi_cupboard.svg" alt="" class="button-mini">
+                          <p>1 lemari </p>
+                      </div>
+                      </div>
+                      </div>
+
+                        <!-- card1 -->
+                        <div class="mt-12">
+                          <div class="overflow-hidden w-full rounded-lg h-5/6">
+                            <img src="kamarcowo3.jpeg" alt="" class="w-full rounded-lg h-full hover:scale-110 transition-all duration-1000">
+                          </div>
+                            <div class="flex my-4 justify-between">
+                                <h4 class="text-2xl font-semibold capitalize">kamar pria 2</h4>
+                                <h5 class="text-2xl capitalize">rp. 1.2juta</h5>
+                            </div>
+                            <div class="flex flex-wrap gap-2 font-semibold">
+                              <div class="flex gap-2">
+                                  <img src="asset/mdi_bed.svg" alt="" class="button-mini">
+                                  <p>2 kasur </p>
+                              </div>
+                              <div class="flex gap-2">
+                                <img src="asset/icon-shower-head.svg" alt="" class="button-mini">
+                                <p>kamar mandi dalam </p>
+                            </div>
+                            <div class="flex gap-2">
+                              <img src="asset/mdi_cupboard.svg" alt="" class="button-mini">
+                              <p>1 lemari </p>
+                          </div>
+                          </div>
+                          </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+      <!-- Daftar Kamar end -->
+
+      <!-- fAQ Start -->
+       <div class="flex flex-col md:flex-row py-8">
+          <div class="flex-1 capitalize">
+            <h6 class="text-lg">pertanyaan yang</h6>
+            <h4 class="text-4xl font-semibold">sering ditanyakan</h4>
+          </div>
+          <div class="flex-2">
+            <!-- faq 1 -->
+            <details class="collapse border-b py-2 border-grayf rounded-none">
+              <summary class="collapse-title text-xl font-medium">Apa saja fasilitas yang disediakan?</summary>
+              <div class="collapse-content">
+                <p> KOST 102 menyediakan parkiran motor, ruang tamu, dapur dalam, kamar mandi dalam, kasur, air gratis, dan ruang tamu untuk berkumpul.</p>
+              </div>
+            </details>
+
+
+             <!-- faq 2 -->
+             <details class="collapse border-b py-2 border-grayf rounded-none">
+              <summary class="collapse-title text-xl font-medium">Apakah bisa dihuni lebih dari satu orang?</summary>
+              <div class="collapse-content">
+                <p> Ya, kamar kami dirancang untuk 2 orang dengan fasilitas 2 kasur. Cocok untuk teman perkuliahan.</p>
+              </div>
+            </details>
+
+             <!-- faq 3 -->
+             <details class="collapse border-b py-2 border-grayf rounded-none">
+              <summary class="collapse-title text-xl font-medium">Bagaimana cara pesan kamar kost?</summary>
+              <div class="collapse-content">
+                <p> Anda bisa langsung CHAT KAMI via WhatsApp untuk cek ketersediaan kamar.</p>
+              </div>
+            </details>
+
+             <!-- faq 4 -->
+             <details class="collapse border-b py-2 border-grayf rounded-none">
+              <summary class="collapse-title text-xl font-medium">Apakah listrik termasuk?</summary>
+              <div class="collapse-content">
+                <p>  Listrik menggunakan sistem prabayar, sehingga Anda hanya membayar sesuai pemakaian setiap bulannya. Biaya air sudah termasuk dalam harga sewa.</p>
+              </div>
+            </details>
+
+             <!-- faq 5 -->
+             <details class="collapse border-b py-2 border-grayf rounded-none">
+              <summary class="collapse-title text-xl font-medium">Stasiun apa saja yang terdekat?</summary>
+              <div class="collapse-content">
+                <p> Kost 102 hanya 5 menit dari Stasiun Lenteng Agung dan Stasiun Universitas Pancasila. Akses transportasi umum sangat mudah!</p>
+              </div>
+            </details>
+
+          </div>
+       </div>
+      <!-- fAQ End -->
+
+      <!-- Testi Start -->
+       <div class="flex flex-col items-center w-full py-16 border-t">
+          <h2 class="text-3xl font-semibold text-center">Dengarkan Suara Penghuni Kami</h2>
+          <div class="carousel w-full py-10">
+             <!-- testi1 -->
+            <div id="item1" class="carousel-item w-full flex flex-col gap-8 items-center">
+              <img src="raka.jpg" alt="" class="rounded-full w-28 h-28 object-cover">
+              <p class="w-4/6 text-center text-md">"Kost 102 sangat nyaman! Lokasinya dekat kampus, dan fasilitasnya lengkap.  Ruang tamunya jadi tempat nongkri favorit kami."</p>
+              <h6 class="capitalize font-semibold">raka pradana</h6>
+            </div>
+             <!-- testi2 -->
+            <div id="item2" class="carousel-item w-full flex flex-col gap-8 items-center">
+              <img src="ipan.JPG" alt="" class="rounded-full w-28 h-28 object-cover">
+              <p class="w-4/6 text-center text-md">"Dari sekian banyak kost yang aku survey, Kost 102 paling nyaman. Suasananya tenang buat belajar, tapi tetap asyik buat nongkrong"</p>
+              <h6 class="capitalize font-semibold">ipan ramadan</h6>
+            </div>
+             <!-- testi3 -->
+            <div id="item3" class="carousel-item w-full flex flex-col gap-8 items-center">
+              <img src="firas.JPG" alt="" class="rounded-full w-28 h-28 object-cover">
+              <p class="w-4/6 text-center text-md">"Kost 102 udah kayak rumah kedua buat aku. Dari awal ngekos sampai sekarang, aku selalu merasa nyaman. Fasilitasnya lengkap, bersih, dan yang paling aku suka, ruang tamunya sering jadi tempat ngobrol dan ngumpul sama teman-teman!"</p>
+              <h6 class="capitalize font-semibold">firas fadly albar</h6>
+            </div>
+            <!-- testi4 -->
+            <div id="item4" class="carousel-item w-full flex flex-col gap-8 items-center">
+              <img src="ilham.JPG" alt="" class="rounded-full w-28 h-28 object-cover">
+              <p class="w-4/6 text-center text-md">"Awalnya aku pilih Kost 102 karena lokasinya strategis, tapi ternyata fasilitas dan lingkungannya juga mendukung banget!"</p>
+              <h6 class="capitalize font-semibold">Ilham ramadan</h6>
+            </div>
+          </div>
+          <div class="flex w-full justify-center gap-2 py-2">
+            <a href="#item1" class="btn btn-xs">1</a>
+            <a href="#item2" class="btn btn-xs">2</a>
+            <a href="#item3" class="btn btn-xs">3</a>
+            <a href="#item4" class="btn btn-xs">4</a>
+          </div>
+
+       </div>
+      <!-- Testi End -->
+
+      <!-- Galery startt -->
+       <div class="flex flex-col items-center py-12" id="galeri">
+        <h2 class="text-3xl font-semibold text-center">Lihat suasana kost lebih dekat</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-2">
+          <!-- img1 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.26.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+
+          <!-- img2 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.28.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+
+          <!-- img3 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.30.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+
+          <!-- img4 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.32.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+
+          <!-- img5 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.33.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+
+          <!-- img6 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.36.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+
+          <!-- img7 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.37.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+
+          <!-- img8 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image 2025-02-17 at 19.09.38.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+
+          <!-- img9 -->
+          <div class="w-full h-72 overflow-hidden">
+            <img src="WhatsApp Image f-02-17 at 19.09.32.jpeg" alt="" class="w-full h-full object-cover hover:scale-105 transition-all duration-1000">
+          </div>
+        </div>
+       </div>
+      <!-- Galery END -->
+
+      <!-- contact start -->
+       <div class="flex py-6 flex-col lg:flex-row" id="kontak">
+        <div class="flex-1 ">
+          <div class="mapouter"><div class="gmap_canvas"><iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=Jl.+Langgar+No.102%2C+RT.10%2FRW.6%2C+Srengseng+Sawah%2C+Kec.+Jagakarsa%2C+Kota+Jakarta+Selatan%2C+Daerah+Khusus+Ibukota+Jakarta+12640&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="w-[450px] lg:w-[640px] md:w-[1040px] h-[560px]"></iframe><a href="https://online.stopwatch-timer.net/">timer for kids</a><br><a href="https://textcaseconvert.com/"></a><br><style>.mapouter{position: relative;text-align: right;height: 560px;width: 660px;}</style><a href="https://www.mapembed.net">google satellite maps zoom</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 560px;width: 660px;}</style></div></div>
+        </div>
+
+        <div class="flex-1 flex flex-col gap-12 justify-center pl-6 py-16">
+          <h1 class="text-4xl font-semibold w-10/12">Segera hubungi kami untuk info lebih lanjut atau <span>langsung survei lokasi.</span></h1>
+          <a href="#" class="flex bg-[#889E73] text-white font-semibold gap-3 py-2 px-4 w-fit hover:bg-black">CHAT KAMI <img src="asset/ic_baseline-phone.svg" alt=""></a>
+        </div>
+       </div>
+      <!-- contact end -->
+
+     
+
+    </div>
+
+     <!-- footer star -->
+     <div class="flex  flex-col bg-blackf text-whitef p-12 gap-40">
+      <div class="flex flex-col md:flex-row md:justify-between gap-8  items-center">
+        <a href="#hero" class="text-5xl font-semibold">KOST 102.</a>
+        <P class="text-right w-fit md:w-64">Lokasi Strategis | Harga Terjangkau | Fasilitas Lengkap</P>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:justify-between items-center gap-8">
+        <p class="w-fit md:w-56">Jagakarsa, Srengseng Sawah, Jakarta Selatan</p>
+        <p class="text-center md:text-left">Designer: <br>
+          firas fadly albar</p>
+        <p>© 2025 KOST 102</p>
+      </div>
+     </div>
+    <!-- footer end -->
+  </body>
+</html>
